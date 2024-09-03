@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="assets/logo-N.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <link rel="stylesheet" href="src/output.css">
+    <title>Noval | Front-End Developer</title>
+  </head>
+  <body>
+    <!-- navbar -->
+     <header>
+      <div class="container">
+        <nav>
+          <a href="">
+            <div class="logo">
+              <img src="assets/logo-nvl-putih.png" alt="">
+            </div>
+            <div class="nav-menu">
+              <a href="#hero" class="active">Home</a>
+              <a href="#about">About Me</a>
+              <a href="#service">Service</a>
+              <a href="#project">Project</a>
+              <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-btn">
+              <button class="btn-menu" onclick="active()">
+                <div class="line"></div>
+                <div class="line"></div>
+              </button>
+            </div>
+          </a>
+        </nav>
+      </div>
+     </header>
+    <!-- end navbar -->
+    <!-- hero -->
+     <div class="hero" id="hero" >
+      <div class="container">
+         <div class="wrapper">
+          <div>
+            <h1 class="title">HI THERE, IM NOVAL, IM A <span>FRONT-END DEVELOPER</span></h1>
+            <p class="desc">As a junior front-end developer, I aspire to grow and become a professional, mastering advanced techniques and delivering high-quality web applications.</p>
+            <div class="btn-div">
+              <a class="btn" href="https://github.com/zen-Hikari" target="_blank">Explor</a>
+              <!-- <a class="btn-2" href="">Join</a> -->
+            </div>
+          </div>
+          <div class="img">
+            <img src="assets/hero-2.png" alt="hero">
+          </div>
+         </div>
+      </div>
+     </div>
+    <!-- end hero -->
+     <!-- about page -->
+      <div class="about" id="about">
+        <div class="container">
+          <div class="about-grid">
+            <div class="img-about">
+              <img src="assets/img-about.png" alt="about">
+            </div>
+            <div>
+              <h1 class="about-title">ABOUT ME</h1>
+              <p class="about-desc">I am a student who has high enthusiasm and motivation in the world of Front-End Developer and Game Developer. With a strong determination to continue learning and growing, I am always looking for opportunities to hone my skills in user interface design and game development. I am dedicated to mastering the latest technology and the latest development methods, and strive to create innovative and interesting works. My deep interest in these two fields drives me to not only understand theory, but also apply it in real projects, with the aim of becoming an excellent professional in the future.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+     <!-- end about page -->
+      <!-- service -->
+      <section class="service" id="service">
+        <div class="container">
+           <h1 class="service-title">SERVICES</h1>
+          <div class="card-grid">
+             <div class="card-menu">
+                <img class="img-fe" src="assets/front-end.png" alt="Front-end">
+                <h2 class="card-title">Front-end Developer</h2>
+                <p class="card-desc">Create Your Landing Page with the Best Responsiveness</p>
+                <div class="btn-service">
+                  <a href="Front-End_Developer/Front-End.html" class="btn">EXPLORE MORE</a>
+                  <i class="icon ai-arrow-up-right"></i>
+                </div>
+            </div>
+            <div class="card-menu">
+                <img class="img-fe" src="assets/game-developer.png" alt="Game">
+                <h2 class="card-title">Game Developer</h2>
+                <p class="card-desc">Create your game projects with us, both large and small projects</p>
+                <div class="btn-service">
+                  <a href="Game_Developer/Game-Page.html" class="btn">EXPLORE MORE</a>
+                  <i class="icon ai-arrow-up-right"></i>
+                </div>
+             </div>
+          </div>
+        </div>
+       </section>
+      <!-- end service -->
+       <!-- project -->
+       <div class="img-slide" id="project">
+        <div class="img-wrapper">
+          <h1 class="project-title">PROJECT</h1>
+          <p class="project-desc">YOU CAN SEE MY PROJECT</p>
+          <p class="project-desc-2">Click the image if you want to see my project</p>
+            <div class="slides">
+              <span id="slide-1"></span>
+              <span id="slide-2"></span>
+              <span id="slide-3"></span>
+              <div class="img-slider">
+                <img id="img-1" src="assets/img-slider/project-1.png" alt="banner 1">
+                <img id="img-2" src="assets/img-slider/PROJECT-2.png" alt="banner 2">
+                <img id="img-3" src="assets/img-slider/project-3.jpg" alt="banner 3">
+              </div>
+            </div>
+            <!-- <div class="navigation">
+              <a href="#slide-1">1</a>
+              <a href="#slide-2">2</a>
+              <a href="#slide-3">3</a>
+            </div> -->
+      </div>
+      </div>
+      <script>
+        document.getElementById('img-1').addEventListener('click', function() {
+          window.open('https://zen-hikari.github.io/NVL_Top-Up/', '_blank');
+        });
+
+        document.getElementById('img-2').addEventListener('click', function() {
+          window.open('https://zen-hikari.github.io/vegetablesShop/', '_blank');
+        });
+
+        document.getElementById('img-2').addEventListener('click', function() {
+          window.open('...', '_blank');
+        });
+      </script>
+       <!-- end project -->
+        <!-- contact -->
+         <section class="contact" id="contact">
+           <div class="container">
+            <h2 class="contact-title">CONTACT ME</h2>
+            <form action="#" class="form-compt">
+
+              <div class="input-box">
+                <div class="input-field field">
+                  <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
+                  <div class="error-txt">Full Name can't be blank</div>
+                </div>
+                <div class="input-field field">
+                  <input type="text" placeholder="Email Address" id="email" class="item" autocomplete="off">
+                  <div class="error-txt email">Email Address can't be blank</div>
+                </div>
+              </div>
+
+              <div class="input-box">
+                <div class="input-field field">
+                  <input type="text" placeholder="Phone Number" id="phone" class="item" autocomplete="off">
+                  <div class="error-txt">Phone Number can't be blank</div>
+                </div>
+                <div class="input-field field">
+                  <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
+                  <div class="error-txt">Subject can't be blank</div>
+                </div>
+              </div>
+
+              <div class="textarea-field field">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off"></textarea>
+                <div class="error-txt">Message can't be blank</div>
+              </div>
+
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+         </section>
+        <!-- end contact -->
+
+        <!-- footer -->
+         <div class="footer" id="footer">
+          <div class="container">
+             <div class="footer-body">
+              <div class="img-logo">
+                <img src="assets/logo-nvl-putih.png" alt="">
+              </div>
+              <hr>
+              <div class="footer-wrap">
+                <div class="footer-title">
+                  <h1>Have a project in your mind?</h1>
+                  <h2>Come Work With Me</h2>
+                </div>
+                <div class="link">
+                  <h5>Use Link</h5>
+                  <div class="link-menu">
+                    <a href="#hero">Home</a>
+                    <a href="#about">About Me</a>
+                    <a href="#service">Service</a>
+                    <a href="#project">Project</a>
+                    <a href="#contact">Contact</a>
+                  </div>
+                </div>
+                <hr>
+              </div>
+              <div class="footer-icon">
+                <div class="icons">
+                  <a href="https://github.com/zen-Hikari" target="_blank">
+                    <i class="icon ai-github-fill"></i>
+                  </a>
+
+                  <a href="https://www.linkedin.com/in/zen-hikari-703125316/" target="_blank">
+                    <i class="icon ai-linkedin-box-fill"></i>
+                  </a>
+                </div>
+                <div class="footer-text">
+                  <h5>@2024,NOVAL👩‍💻,This Website Was Created Using ❤️</h5>
+                </div>
+              </div>
+             </div>
+          </div>
+         </div>
+        <!-- end footer -->
+
+         <!-- sc -->
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="main.js"></script>
+  </body>
+</html>
